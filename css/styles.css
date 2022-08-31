@@ -132,6 +132,22 @@ img{
     
         color: var(--secondary-color);
 }
+.icon-envelope{
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.icon-phone{
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
 .contact-phone:hover,
 .contact-phone:focus{
     color: var(--accent-color);
