@@ -145,7 +145,18 @@ color: var(--accent-color);
 /* ----------HERO------------ */
 
 .hero{
-    background: var(--background-color);
+    background-color: var(--background-color);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), url('../images/3/Img-9-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -176,6 +187,11 @@ color: var(--accent-color);
         align-items: baseline;
 
         letter-spacing: 0.06em;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 32px; 
+        box-shadow: 0px,
+            4px rgba(0, 0, 0, 0.15);
     
         color: var(--second-accent-color);
         background-color: var(--accent-color);
@@ -191,6 +207,28 @@ color: var(--accent-color);
 }
 .benefits-item:not(:last-child){
     margin-right: 30px;
+}
+.benefits-item::before{
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 32px;
+     background-position: center;
+     background-size:auto;
+     background-repeat: no-repeat;
+     background-color: var(--srcond-background-color);
+}
+.benefits-item:nth-child(1)::before{
+    background-image: url(..//images/icons.svg/antenna\ 1.svg); 
+}
+.benefits-item:nth-child(2)::before{
+    background-image: url(..//images/icons.svg/clock\ 1.svg);
+}
+.benefits-item:nth-child(3)::before{
+    background-image: url(..//images/icons.svg/Vector.svg);
+}
+.benefits-item:nth-child(4)::before{
+    background-image: url(..//images/icons.svg/astronaut\ 1.svg);
 }
 .benefits-title{
         line-height: 1.14;
@@ -232,9 +270,11 @@ color: var(--accent-color);
 .team-item{
     background-color: var(--second-accent-color);
     padding-bottom: 30px;
+    
 }
 .team-img{
     padding-bottom: 30px;
+    max-width: 260px;
 }
 .team-list   {
 display: flex;
@@ -256,6 +296,13 @@ display: flex;
         color: var(--secondary-color);
 }
 
+.costomer-title{
+   font-style: var(--primary-color);
+   font-size: 36px;
+   line-height: 1.16;
+   text-align: center;
+   margin-bottom: 50px;
+}
 
 .footer{
     background: var(--background-color);
