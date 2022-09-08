@@ -279,7 +279,6 @@ color: var(--accent-color);
 .team-item{
     background-color: var(--second-accent-color);
     padding-bottom: 30px;
-    
 }
 .team-img{
     padding-bottom: 30px;
@@ -303,6 +302,7 @@ display: flex;
         line-height: 1.19;
         text-align: center;
         color: var(--secondary-color);
+        margin-bottom: 16px;
 }
 .icons-list{
     display: flex;
@@ -357,9 +357,16 @@ display: flex;
 }
 
 .footer{
+    display: flex;
+    justify-content: flex-start;
     background: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-nav{
+    margin-top: 60px;
+    margin-left: 216px;
+    margin-right: 156px;
 }
 .footer-logo{
     margin-bottom: 20px;
@@ -391,6 +398,37 @@ display: flex;
 .footer-adress:hover,
 .footer-adress:focus {
     color: var(--accent-color);
+}
+.footer-social{
+    margin-top: 76px;
+}
+.footer-social-title{
+    text-transform: uppercase;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.18;
+        color: var(--second-accent-color);
+        margin-bottom: 20px;
+}
+.footer-social-list{
+    display: flex;
+   
+
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    fill: #FFFFFF;
+}
+.footer-icons:hover,
+.footer-icons:focus{
+    background-color:#2196F3;
 }
 /* ПОРТФОЛИО */
 
