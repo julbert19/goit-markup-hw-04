@@ -412,8 +412,9 @@ display: flex;
 }
 .footer-social-list{
     display: flex;
-   
-
+}
+.footer-list{
+    margin-right: 10px;
 }
 
 .footer-icons{
