@@ -278,7 +278,9 @@ color: var(--accent-color);
 }
 .team-item{
     background-color: var(--second-accent-color);
+    border-radius: 4px;
     padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-img{
     padding-bottom: 30px;
@@ -348,7 +350,10 @@ display: flex;
     border-width: 1px;
     border-style: solid;
     border-color: #AFB1B8;
-    fill:#AFB1B8
+    fill:#AFB1B8;
+    
+    
+
 }
 .costomer-link:hover,
 .costomer-link:focus{
@@ -456,7 +461,8 @@ display: flex;
 .filters-btm:hover,
 .filters-btm:focus{
     background: var(--accent-color);
-    color: var(--second-accent-color);   
+    color: var(--second-accent-color); 
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .active-btm{
     padding: 6px 22px;
@@ -471,6 +477,7 @@ display: flex;
         line-height: 1.62;
         text-align: center;
         cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-title{
         font-size: 18px;
@@ -485,8 +492,13 @@ display: flex;
     gap: 30px;
 }
 .cases-item{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
         flex-basis: calc(( 100% - 60px) / 3 );
+}
+
+.cases-item:hover,
+.cases-item:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
