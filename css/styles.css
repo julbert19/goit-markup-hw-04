@@ -66,6 +66,7 @@ img{
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 .header-conteiner,
 .header-nav {
@@ -126,7 +127,9 @@ img{
 .cotnact-mail,
 .contact-phone {
     
-        font-weight: 500;
+    display: flex; 
+    align-items: center;   
+    font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--secondary-color);
@@ -254,6 +257,9 @@ color: var(--accent-color);
 
 /* ======we do===== */
 
+.section-wedo{
+    padding-top: 0px;
+}
 .section-title{
         font-size: 36px;
         line-height: 1.17;
@@ -308,6 +314,7 @@ display: flex;
 }
 .icons-list{
     display: flex;
+    gap: 10px;
     justify-content: center;
 }
 .icons-list:not(:last-child){
@@ -334,6 +341,10 @@ display: flex;
    text-align: center;
    margin-bottom: 50px;
 }
+.costomerlist{
+    height: 92px;
+    width: 170px;
+}
 .costomer-list{
     display: flex;
     justify-content:space-between
@@ -344,8 +355,8 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 72px;
-    width: 170px;
+    height: 100%;
+    width: 100%;
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
@@ -362,23 +373,18 @@ display: flex;
 }
 
 .footer{
-    display: flex;
-    justify-content: flex-start;
     background: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-nav{
-    margin-top: 60px;
-    margin-left: 216px;
-    margin-right: 156px;
-}
-.footer-logo{
-    margin-bottom: 20px;
+.footer-navigation{
+    display: flex;
+    align-items: baseline;
 }
 .footer-item{
     margin-bottom: 9px;
 }
+
 .footer-adress,
 .footer-mail,
 .footer-phone {
@@ -388,6 +394,7 @@ display: flex;
         line-height: 1.71;
         color: var(--second-accent-color);
 }
+
 .footer-mail,
 .footer-phone {
     color: rgba(255, 255, 255, 0.6);
@@ -405,7 +412,7 @@ display: flex;
     color: var(--accent-color);
 }
 .footer-social{
-    margin-top: 76px;
+    
 }
 .footer-social-title{
     text-transform: uppercase;
@@ -492,7 +499,6 @@ display: flex;
     gap: 30px;
 }
 .cases-item{
-    margin-bottom: 20px;
         flex-basis: calc(( 100% - 60px) / 3 );
 }
 
